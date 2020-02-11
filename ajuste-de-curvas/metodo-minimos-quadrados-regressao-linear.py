@@ -19,9 +19,9 @@ y = np.array([0, 10, 19, 31, 39, 52, 65, 69, 70])
 n = len(x) # retorna o número de amostras
 sx = np.sum(x) # ∑x
 sy = np.sum(y) # ∑y
-sx2 = np.sum(x.copy()**2) # ∑x²
-sy2 = np.sum(y.copy()**2) # ∑y²
-sxy = np.sum(x.copy()*y.copy()) # ∑xy
+sx2 = np.sum(x**2) # ∑x²
+sy2 = np.sum(y**2) # ∑y²
+sxy = np.sum(x*y) # ∑xy
 
 # y = a0 + a1*x
 a1 = (n*sxy - sx*sy)/(n*sx2 - sx**2) 
